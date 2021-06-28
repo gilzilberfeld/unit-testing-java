@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.e07.clean;
+package testingil.unittesting.examples.s02.d04.clean;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

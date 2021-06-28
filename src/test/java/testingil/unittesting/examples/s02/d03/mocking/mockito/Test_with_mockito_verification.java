@@ -3,6 +3,7 @@ package testingil.unittesting.examples.s02.d03.mocking.mockito;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.atLeast;
 import static org.mockito.Mockito.mock;
+import static org.testng.Assert.assertEquals;
 
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
@@ -12,8 +13,6 @@ import testingil.unittesting.examples.s02.d02.mocking.ACMode;
 import testingil.unittesting.examples.s02.d02.mocking.AirCondition;
 import testingil.unittesting.examples.s02.d02.mocking.Car;
 import testingil.unittesting.examples.s02.d02.mocking.Driver;
-
-import static org.testng.Assert.*;
 
 class Test_with_mockito_verification{
 

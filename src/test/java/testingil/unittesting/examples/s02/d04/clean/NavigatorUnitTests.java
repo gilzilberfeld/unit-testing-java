@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.e07.clean;
+package testingil.unittesting.examples.s02.d04.clean;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -12,10 +12,10 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import testingil.unittesting.examples.e07.clean.Distance;
-import testingil.unittesting.examples.e07.clean.DistanceProvider;
-import testingil.unittesting.examples.e07.clean.Location;
-import testingil.unittesting.examples.e07.clean.Navigator;
+import testingil.unittesting.examples.s02.d04.clean.Distance;
+import testingil.unittesting.examples.s02.d04.clean.DistanceProvider;
+import testingil.unittesting.examples.s02.d04.clean.Location;
+import testingil.unittesting.examples.s02.d04.clean.Navigator;
 
 class NavigatorUnitTests {
 

@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.e07.clean;
+package testingil.unittesting.examples.s02.d04.clean;
 
 public class Navigator {
 

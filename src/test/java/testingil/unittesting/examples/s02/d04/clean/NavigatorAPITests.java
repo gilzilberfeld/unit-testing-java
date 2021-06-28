@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.e07.clean;
+package testingil.unittesting.examples.s02.d04.clean;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -23,10 +23,10 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import testingil.unittesting.examples.e07.clean.Distance;
-import testingil.unittesting.examples.e07.clean.DistanceProvider;
-import testingil.unittesting.examples.e07.clean.Location;
-import testingil.unittesting.examples.e07.clean.NavigationController;
+import testingil.unittesting.examples.s02.d04.clean.Distance;
+import testingil.unittesting.examples.s02.d04.clean.DistanceProvider;
+import testingil.unittesting.examples.s02.d04.clean.Location;
+import testingil.unittesting.examples.s02.d04.clean.NavigationController;
 
 @WebMvcTest
 @ContextConfiguration(classes = NavigatorAPITestsConfig.class)

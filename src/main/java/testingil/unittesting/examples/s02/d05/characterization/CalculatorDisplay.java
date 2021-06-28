@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.s02.d04.characterization;
+package testingil.unittesting.examples.s02.d05.characterization;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -43,7 +43,6 @@ public class CalculatorDisplay {
 			}
 		}
 	}
-
 
 	public String getDisplay() {
 		if (display.equals(""))

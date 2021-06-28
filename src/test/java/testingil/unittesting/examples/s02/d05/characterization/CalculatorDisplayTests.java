@@ -1,8 +1,10 @@
-package testingil.unittesting.examples.s02.d04.characterization;
+package testingil.unittesting.examples.s02.d05.characterization;
 
 import org.approvaltests.Approvals;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import testingil.unittesting.examples.s02.d05.characterization.CalculatorDisplay;
 
 public class CalculatorDisplayTests {
 

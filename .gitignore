@@ -97,5 +97,33 @@ hs_err_pid*
 ## ignoring target file
 target/
 
-# TestNG
-test-output/
+# End of https://www.toptal.com/developers/gitignore/api/eclipse,java,java-web
+test-output/Default suite/Default test.html
+test-output/Default suite/Default test.xml
+test-output/Default suite/testng-failed.xml
+test-output/emailable-report.html
+test-output/index.html
+test-output/junitreports/TEST-testingil.unittesting.examples.s03.d06.clients.ItemClientTests.xml
+test-output/old/Default suite/classes.html
+test-output/old/Default suite/methods-alphabetical.html
+test-output/old/Default suite/methods.html
+test-output/old/Default suite/testng.xml.html
+test-output/old/Default suite/toc.html
+test-output/old/index.html
+test-output/testng-failed.xml
+test-output/testng-results.xml
+test-output/Default suite/Default test.html
+test-output/Default suite/Default test.xml
+test-output/Default suite/testng-failed.xml
+test-output/emailable-report.html
+test-output/index.html
+test-output/old/Default suite/classes.html
+test-output/old/Default suite/methods-alphabetical.html
+test-output/old/Default suite/methods.html
+test-output/old/Default suite/testng.xml.html
+test-output/old/Default suite/toc.html
+test-output/old/index.html
+test-output/testng-failed.xml
+test-output/testng-results.xml
+test-output/Default suite/Default test.html
+test-output/Default suite/Default test.xml

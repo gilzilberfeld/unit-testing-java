@@ -25,7 +25,7 @@ public class CalculatorDisplayTests {
 	}
 	
 	
-	@Test
+	@Test(enabled = false)
 	public void ComplexOperationsTest() throws Exception	{
 		pressSequence("1+2=");
 		Approvals.verify(log.getAll());

@@ -27,7 +27,7 @@ public class AutowiringMocksTest extends AbstractTestNGSpringContextTests {
 		Mockito.reset(mockjdbc);
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void repository_is_created() {
 		assertNotNull(repository);
 		assertNotNull(repository.getTemplate());

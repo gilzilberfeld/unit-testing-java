@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 @SpringBootTest
 public class CalculatorDisplaySpringTests extends AbstractTestNGSpringContextTests {
 
-	@Test
+	@Test(enabled = false)
 	public void firstTest() {
 
 	}

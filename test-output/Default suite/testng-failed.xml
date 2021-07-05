@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="testingil.unittesting.examples.s02.d04.characterization.CalculatorDisplayTests">
+      <class name="testingil.unittesting.examples.s03.d02.configuration.AutowiringUsingConfigurationTest">
         <methods>
-          <include name="setup"/>
-          <include name="ComplexOperationsTest"/>
+          <include name="repository_is_created"/>
         </methods>
-      </class> <!-- testingil.unittesting.examples.s02.d04.characterization.CalculatorDisplayTests -->
+      </class> <!-- testingil.unittesting.examples.s03.d02.configuration.AutowiringUsingConfigurationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

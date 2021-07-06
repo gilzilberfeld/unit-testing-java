@@ -15,8 +15,14 @@ local.properties
 .loadpath
 .recommenders
 
+build
+test-output
+
 # External tool builders
 .externalToolBuilders/
+
+# Gradle
+.gradle
 
 # Locally stored "Eclipse launch configurations"
 *.launch

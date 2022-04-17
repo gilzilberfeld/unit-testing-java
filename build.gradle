@@ -22,7 +22,7 @@ dependencies {
     implementation group: 'com.approvaltests', name: 'approvaltests', version: '15.1.2'
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.6.6'
     testImplementation group: 'org.testng', name: 'testng', version: '7.5'
-
+    testImplementation group: 'com.h2database', name: 'h2', version: '2.1.212'
 }
 
 group = 'testingil.courses.unittesting'

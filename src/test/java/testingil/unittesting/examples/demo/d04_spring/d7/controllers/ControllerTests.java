@@ -9,6 +9,7 @@ import org.mockito.Answers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.springframework.test.web.servlet.MockMvc;
@@ -19,9 +20,9 @@ import org.testng.annotations.Test;
 
 @SpringBootTest
 @ContextConfiguration(classes = { ItemConfiguration.class })
+@DirtiesContext
 public class ControllerTests extends AbstractTestNGSpringContextTests {
 
-	@MockBean(answer = Answers.RETURNS_DEEP_STUBS)
 	@Autowired
 	ItemRepository mockrepository;
 

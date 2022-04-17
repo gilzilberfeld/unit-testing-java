@@ -1,5 +1,6 @@
 package testingil.unittesting.examples.demo.d01.testng.d2_fixture;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import testingil.unittesting.examples.demo.d01.testng.Factorial;
@@ -10,7 +11,7 @@ public class FactorialTests {
 
 	private Factorial factorial;
 
-	@BeforeTest
+	@BeforeMethod
 	public void setup(){
 		factorial = new Factorial();
 	}

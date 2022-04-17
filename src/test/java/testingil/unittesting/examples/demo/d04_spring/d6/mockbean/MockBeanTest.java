@@ -1,27 +1,35 @@
 package testingil.unittesting.examples.demo.d04_spring.d6.mockbean;
 
+import org.mockito.Answers;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertNotNull;
 
-import org.mockito.Answers;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
 
 @SpringBootTest
 @ContextConfiguration(classes = { EmptyConfiguration.class })
 public class MockBeanTest extends AbstractTestNGSpringContextTests {
 
-	@MockBean(answer = Answers.RETURNS_DEEP_STUBS)
-	@Autowired
-	ItemRepository repository;
+	@MockBean
+	ItemRepository mockRepository;
 
 	@Test
-	public void repository_is_created() {
-		assertNotNull(repository);
-		assertNotNull(repository.getTemplate());
-		assertNotNull(repository.getTemplate().getDataSource());
+	public void test_one_call() {
+		mockRepository.findTotal();
+		verify(mockRepository).findTotal();
 	}
+
+	@Test(enabled = false)
+	public void test_zero_calls() {
+		verify(mockRepository, never()).findTotal();
+	}
+
 }

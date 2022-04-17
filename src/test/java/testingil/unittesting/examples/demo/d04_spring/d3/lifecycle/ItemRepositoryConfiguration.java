@@ -1,26 +1,21 @@
-package testingil.unittesting.examples.demo.d04_spring.d7.controllers;
+package testingil.unittesting.examples.demo.d04_spring.d3.lifecycle;
 
 import org.mockito.Mockito;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
-
-import static org.mockito.Mockito.*;
+import testingil.unittesting.examples.demo.d04_spring.d2.mocking.ItemRepository;
 
 @Configuration
-public class ItemConfiguration {
+public class ItemRepositoryConfiguration {
+	
 	@Bean
-	public ItemController itemController() {
-		return new ItemController();
-	}
-
-	@Bean ItemRepository itemRepository() {
-		return mock(ItemRepository.class);
+	public ItemRepository itemRepository() {
+		return Mockito.mock((ItemRepository.class));
 	}
 
 	@Bean
 	public JdbcTemplate jdbcTemplate() {
 		return Mockito.mock(JdbcTemplate.class);
 	}
-
 }

@@ -15,19 +15,20 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.2.7.RELEASE'
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.2.7.RELEASE'
-    implementation 'org.apache.commons:commons-lang3:3.9'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.6'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.6.6'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'javax.persistence:javax.persistence-api:2.2'
-    implementation 'com.approvaltests:approvaltests:11.6.0'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.7.RELEASE'
-    testImplementation 'org.testng:testng:6.14.3'
+    implementation group: 'com.approvaltests', name: 'approvaltests', version: '15.1.2'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.6.6'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.5'
+
 }
 
 group = 'testingil.courses.unittesting'
 version = '0.0.1-SNAPSHOT'
 description = 'exercises'
-java.sourceCompatibility = JavaVersion.VERSION_1_8
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 publishing {
     publications {

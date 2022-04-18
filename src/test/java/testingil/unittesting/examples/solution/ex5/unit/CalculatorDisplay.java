@@ -1,7 +1,12 @@
-package testingil.unittesting.examples.solution.ex3;
+package testingil.unittesting.examples.solution.ex5.unit;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class CalculatorDisplay {
+
+	@Autowired
 	private ExternalDisplay externalDisplay;
+
 	String display = "";
 	int lastArgument = 0;
 	int result = 0;
@@ -9,12 +14,7 @@ public class CalculatorDisplay {
 	Boolean shouldReset = true;
 
 	OperationType lastOperation;
-	public boolean hasDisplayConnected;
-
-	public CalculatorDisplay(ExternalDisplay externalDisplay){
-		this.externalDisplay = externalDisplay;
-		hasDisplayConnected = true;
-	}
+	public boolean hasDisplayConnected=true;
 
 	public void press(String key) {
 		if (key.equals("+")) {

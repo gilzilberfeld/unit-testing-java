@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping ("/calculator")
 public class CalculatorController {
-	@Autowired private Calculator calculator;
+	@Autowired private CalculatorDisplay calculator;
 	
 	@PostMapping(value ="/press")
 	public ResponseEntity<?> press(

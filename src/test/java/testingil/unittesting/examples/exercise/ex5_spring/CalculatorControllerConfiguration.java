@@ -12,7 +12,7 @@ public class CalculatorControllerConfiguration {
 	}
 	
 	@Bean
-	public Calculator calculator() {
-		return new Calculator();
+	public CalculatorDisplay calculator() {
+		return new CalculatorDisplay();
 	}
 }

@@ -21,11 +21,6 @@ public class AutowiringMocksTest extends AbstractTestNGSpringContextTests {
 	@Autowired
 	JdbcTemplate mockjdbc;
 	
-	@BeforeMethod
-	public void setup() {
-		Mockito.reset(mockjdbc);
-	}
-	
 	@Test(enabled = false)
 	public void repository_is_created() {
 		assertNotNull(repository);

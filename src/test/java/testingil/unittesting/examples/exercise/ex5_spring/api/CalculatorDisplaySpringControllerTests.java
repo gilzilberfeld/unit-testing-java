@@ -17,7 +17,6 @@ import static org.testng.Assert.assertEquals;
 // add some characterization tests
 // refactor the tests
 // add reset method
-// add client test
 
 @SpringBootTest
 @ContextConfiguration(classes = { CalculatorControllerConfiguration.class })

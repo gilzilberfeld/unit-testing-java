@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 // 3. Refactor tests
 public class CalculatorDisplayTests {
 
-	@Test
+	@Test(description = "1->1")
 	public void firstTest() {
 
 	}

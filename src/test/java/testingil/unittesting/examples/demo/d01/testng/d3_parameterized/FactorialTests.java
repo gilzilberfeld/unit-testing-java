@@ -22,6 +22,6 @@ public class FactorialTests {
 	@Test(enabled = false, dataProvider = "factorial_values")
 	public void factorial_tests(int input, int result) {
 		Factorial factorial 	= new Factorial();
-		assertEquals(result, factorial.calculate(input));
+		assertEquals(factorial.calculate(input), result);
 	}
 }

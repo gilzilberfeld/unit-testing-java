@@ -12,7 +12,7 @@ import static org.testng.Assert.assertEquals;
 //  2. read values form CSV file
 public class CalculatorDisplayTests_b {
 
-	public static final String DATA_CSV = "src\\test\\java\\testingil\\unittesting\\examples\\solution\\ex2\\data.csv";
+	public static final String DATA_CSV = "src\\test\\java\\testingil\\unittesting\\examples\\solution\\ex2_parameterization\\data.csv";
 	private CalculatorDisplay cd;
 
 	@BeforeMethod

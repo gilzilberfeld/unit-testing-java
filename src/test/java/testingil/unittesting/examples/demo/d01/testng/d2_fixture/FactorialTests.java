@@ -18,18 +18,18 @@ public class FactorialTests {
 
 	@Test
 	public void factorial_tests() {
-		assertEquals(1, factorial.calculate(1));
-		assertEquals(2, factorial.calculate(2));
-		assertEquals(6, factorial.calculate(3));
+		assertEquals(factorial.calculate(1), 1);
+		assertEquals(factorial.calculate(2), 2);
+		assertEquals(factorial.calculate(3), 6 );
 	}
 
 	@Test(enabled = false)
 	public void negative_factorial() {
-		assertEquals(0, factorial.calculate(-3));
+		assertEquals(factorial.calculate(-3), 0);
 	}
 
 	@Test
 	public void big_factorial() {
-		assertEquals(3628800, factorial.calculate(10));
+		assertEquals(factorial.calculate(10), 3628800);
 	}
 }

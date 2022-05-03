@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import testingil.unittesting.examples.demo.d02_mocking.Car;
 import testingil.unittesting.examples.demo.d02_mocking.Driver;
 
-class Test_with_manual_mock{
+public class Test_with_manual_mock{
 
 	@Test
 	void cannot_drive_a_running_car() {

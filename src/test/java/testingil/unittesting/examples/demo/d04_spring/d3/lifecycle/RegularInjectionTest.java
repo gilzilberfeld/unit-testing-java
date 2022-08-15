@@ -7,11 +7,12 @@ import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
 import testingil.unittesting.examples.demo.d04_spring.d2.mocking.ItemRepository;
 
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
 @SpringBootTest
 @ContextConfiguration(classes = { ItemRepositoryConfiguration.class })
-public class SingletonTest extends AbstractTestNGSpringContextTests {
+public class RegularInjectionTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
     ItemRepository mockRepository;
@@ -24,6 +25,6 @@ public class SingletonTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void test_zero_calls() {
-        verify(mockRepository).findTotal();
+        verify(mockRepository,never()).findTotal();
     }
 }

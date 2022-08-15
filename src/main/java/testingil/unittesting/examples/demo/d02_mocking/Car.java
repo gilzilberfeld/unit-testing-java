@@ -17,4 +17,9 @@ public class Car {
 		throw new NotImplementedException("Not yet");	
 	}
 
+
+
+	public AirCondition getAC() {
+		throw new NotImplementedException("Not yet");
+	}
 }

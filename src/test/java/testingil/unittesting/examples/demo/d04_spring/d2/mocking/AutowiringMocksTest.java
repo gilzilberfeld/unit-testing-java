@@ -7,9 +7,13 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static org.mockito.Mockito.when;
 import static org.testng.Assert.assertNotNull;
 
 import org.mockito.Mockito;
+
+import javax.sql.DataSource;
 
 @SpringBootTest
 @ContextConfiguration(classes = { ItemRepositoryConfiguration.class })

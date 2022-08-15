@@ -1,8 +1,6 @@
 package testingil.unittesting.examples.demo.d01.testng.d1_factorial;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-import static org.testng.AssertJUnit.assertTrue;
 
 import org.testng.annotations.Test;
 import testingil.unittesting.examples.demo.d01.testng.Factorial;

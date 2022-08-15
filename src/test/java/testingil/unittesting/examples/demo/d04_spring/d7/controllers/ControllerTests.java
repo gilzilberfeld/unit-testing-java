@@ -44,7 +44,8 @@ public class ControllerTests extends AbstractTestNGSpringContextTests {
 	}
 
 	private String callGetAllItems_error() throws Exception {
-		MvcResult result = mockMvc.perform(
+		MvcResult result =
+				mockMvc.perform(
 				get("/items/"))
 				.andExpect(status().isServiceUnavailable())
 				.andReturn();

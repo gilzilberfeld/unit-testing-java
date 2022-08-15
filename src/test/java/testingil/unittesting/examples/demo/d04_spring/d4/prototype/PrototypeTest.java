@@ -2,6 +2,7 @@ package testingil.unittesting.examples.demo.d04_spring.d4.prototype;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
@@ -14,10 +15,11 @@ import static org.mockito.Mockito.verify;
 @ContextConfiguration(classes = { ItemRepositoryConfiguration.class })
 public class PrototypeTest extends AbstractTestNGSpringContextTests {
 
-    @Autowired
+    @Autowired(required = false)
     ItemRepository mockRepository;
 
-    @Test
+
+     @Test
     public void test_one_call() {
         mockRepository.findTotal();
         verify(mockRepository).findTotal();

@@ -13,7 +13,7 @@ public class CalculatorDisplay {
 
 	public CalculatorDisplay(ExternalDisplay externalDisplay){
 		this.externalDisplay = externalDisplay;
-		hasDisplayConnected = true;
+		hasDisplayConnected = false;
 	}
 
 	public void press(String key) {

@@ -20,9 +20,12 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3:3.12.0'
     implementation 'javax.persistence:javax.persistence-api:2.2'
     implementation 'com.approvaltests:approvaltests:15.1.2'
+    implementation 'net.bytebuddy:byte-buddy:1.14.5'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.6'
     testImplementation 'org.testng:testng:7.5'
     testImplementation 'com.h2database:h2:2.1.212'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.4.0'
+
 }
 
 group = 'testingil.courses.unittesting'

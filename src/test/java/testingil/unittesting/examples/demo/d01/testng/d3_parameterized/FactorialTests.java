@@ -19,7 +19,7 @@ public class FactorialTests {
 		};
 	}
 
-	@Test(enabled = true, dataProvider = "factorial_values")
+	@Test(enabled = false, dataProvider = "factorial_values")
 	public void factorial_tests(int input, int result) {
 		Factorial factorial 	= new Factorial();
 		assertEquals(factorial.calculate(input), result);

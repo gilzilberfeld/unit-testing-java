@@ -1,4 +1,4 @@
-package testingil.unittesting.examples.demo.d03_characterization;
+package testingil.unittesting.examples.demo.d03_refactoring;
 
 public class TestLogger {
 	

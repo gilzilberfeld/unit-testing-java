@@ -20,7 +20,7 @@ public class CalculatorDisplayTests_b {
 	}
 
 	@Test
-	public void when_display_is_on_display_is_correct() {
+	public void when_display_is_on_display_is_correct()  {
 		ExternalDisplay display = mock(ExternalDisplay.class);
 		when(display.isOn()).thenReturn(true);
 		CalculatorDisplay cd = new CalculatorDisplay(display);

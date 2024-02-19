@@ -1,9 +1,6 @@
 package testingil.unittesting.examples.solution.ex3_mocking;
 
-import ch.qos.logback.core.encoder.EchoEncoder;
-
-public class CalculatorDisplay {
-	private ExternalDisplay externalDisplay;
+public class CalculatorDisplay_WithPlasma {
 	String display = "";
 	int lastArgument = 0;
 	int result = 0;
@@ -13,8 +10,7 @@ public class CalculatorDisplay {
 	OperationType lastOperation;
 	public boolean hasDisplayConnected;
 
-	public CalculatorDisplay(ExternalDisplay externalDisplay){
-		this.externalDisplay = externalDisplay;
+	public CalculatorDisplay_WithPlasma(){
 		hasDisplayConnected = false;
 	}
 
@@ -49,18 +45,13 @@ public class CalculatorDisplay {
 				display += key;
 			}
 		}
-		if (externalDisplay.isOn()) {
-			try {
-				externalDisplay.show(getDisplay());
-			} catch (Exception e) {
-				display = "E";
-			}
-		}
+		if (PlasmaScreen.isOn())
+			PlasmaScreen.show(getDisplay());
 		else
 			this.hasDisplayConnected = false;
 	}
 
-	public String getDisplay() {
+	private String getDisplay() {
 		if (display.equals(""))
 			return "0";
 		if (display.length() > 5)

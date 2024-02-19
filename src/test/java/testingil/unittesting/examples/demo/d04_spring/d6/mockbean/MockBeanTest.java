@@ -21,13 +21,13 @@ public class MockBeanTest extends AbstractTestNGSpringContextTests {
 	@MockBean
 	ItemRepository mockRepository;
 
-	@Test(enabled = false)
+	@Test
 	public void test_one_call() {
 		mockRepository.findTotal();
 		verify(mockRepository).findTotal();
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void test_zero_calls() {
 		verify(mockRepository, never()).findTotal();
 	}

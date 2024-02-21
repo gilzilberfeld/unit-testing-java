@@ -23,8 +23,8 @@ public class ItemRepository {
 	public Item findByName(String name) {
 		Item item = jdbcTemplate.queryForObject(
 				"select * from items where name=?", 
-				new Object[] {name},
-				new BeanPropertyRowMapper<Item>(Item.class)
+				new BeanPropertyRowMapper<Item>(Item.class),
+				name
 				);
 		return item;
 
